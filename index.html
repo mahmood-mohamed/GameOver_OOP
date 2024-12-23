@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 12 | Game Over</title>
+    <!-- Favicon image -->
+    <link rel="shortcut icon" href="images/logo-sm.png" type="image/x-icon">
+    <!-- Font Awesome File -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sono:wght@200..800&display=swap"
+      rel="stylesheet" />
+    <!-- Bootstrap File -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- CSS File -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            display: none;
+            padding: 20px;
+        }
+        #games-section {
+            display: block;
+        }
+        .game-item {
+            cursor: pointer;
+            padding: 10px;
+            border: 1px solid #ccc;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        .game-item:hover {
+            background-color: #f0f0f0;
+        }
+        #details-section {
+            display: none;
+        }
+        button {
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style> -->
+  </head>
+  <body>
+
+    <section id="games" class="">
+
+      <!--* Header *-->
+      <header>
+        <img src="images/wraper.png" class="w-100" alt="game-photo">
+      </header>
+
+      <!--* Navbar *-->
+      <nav class="navbar navbar-expand-lg position-sticky top-0 z-3 mx-auto rounded-4 shadow-lg col-md-6 col-lg-9">
+        <div class="container d-flex justify-content-between align-items-center">
+            <h5 class="navbar-brand text-uppercase m-0 text-light fst-italic fw-500">
+                <img src="images/logo-sm.png" class="pe-1" alt="logo">game reviews
+            </h5>
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-uppercase" href="#" aria-current="page">mmorpg</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase" href="#">shooter</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase" href="#">sailing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase" href="#">permadeath</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase" href="#">superhero</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase" href="#">pixel</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+      </nav>
+
+
+
+      <!--* Games *-->
+      <div class="container mt-5">
+        <div class="row g-3 g-lg-4" id="games-list">
+          <!-- Games will be dynamically added here -->
+        </div>
+      </div>
+    </section>
+
+    <!--* Loading Spinner *-->
+    <div class="loading d-none" id="loading">
+      <span class="loader"></span>
+    </div>
+
+    <!--* Details Game *-->
+    <section id="details" class="d-none container text-light">
+      <div class="pt-3 pb-4 d-flex justify-content-between align-items-center">
+        <h1>Details Game</h1>
+        <button type="button" class="bg-transparent border-0" title="close" id="closeBtn">
+          <i class="fa-solid fs-5 fa-x close" ></i>
+        </button> 
+      </div>
+
+      <div class="row gy-3" id="game-details">
+        <!-- Game details will be dynamically added here -->
+      </div>
+
+
+
+
+
+
+    </section>
+
+
+
+
+
+    <!-- Font Awesome File -->
+    <script src="js/all.min.js"></script>
+    <!-- Bootstrap File -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- JS File -->
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
+
+

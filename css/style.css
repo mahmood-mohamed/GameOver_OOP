@@ -1,0 +1,122 @@
+:root{
+    --nav-bg: #3A497B;
+    --nav-clr: #0099CC;
+}
+
+/**  Global Classes  **/
+.fw-400{
+    font-weight: 400;
+}
+.fw-500{
+    font-weight: 500;
+}
+.fw-700{
+    font-weight: 700;
+}
+.bg-card{
+    background-color: #272B30;
+}
+body{
+    background-color: #272B30;
+    font-family: "Sono", serif;
+}
+.img-hight{
+    height: 200px;
+    object-fit: cover;
+}
+
+/*****      Home Page      *****/
+header img{
+    max-height: 30vh;
+    object-fit: cover;
+}
+.navbar{
+    background-color: var(--nav-bg) !important;
+    color: #fff !important;
+}
+.navbar .navbar-brand img{
+    width: 40px;
+    object-fit: cover;
+}
+.navbar .nav-item .nav-link{
+    font-size: 1rem;
+    transform: uppercase;
+    transition: color .5s;
+    color: #fff;
+}
+.navbar .nav-item .nav-link:hover{  
+    color: var(--nav-clr);
+}
+.active{
+    color: var(--nav-clr) !important;
+}
+
+.row .col-sm-6 .card{
+    cursor: pointer;
+    filter: grayscale(0.7);
+    transition: transform 0.5s, filter 0.5s .2s;
+}
+.row .col-sm-6 .card:hover{
+    filter: grayscale(0);
+    transform: scale(1.04);
+}
+.card .img-games{
+    height: 300px;
+    object-fit: cover;
+}
+
+
+.close{
+    color: #b3b3b3;
+    cursor: pointer;
+    transition: color .5s;
+}
+.close:hover{
+    color: red;
+}
+/* ********************************************** */
+/** Spinner **/
+.loading{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loader {
+    display: block;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: inline-block;
+    border-top: 4px solid #FFF;
+    border-right: 4px solid transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+  }
+  .loader::after {
+    content: '';  
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border-left: 4px solid #FF3D00;
+    border-bottom: 4px solid transparent;
+    animation: rotation 0.5s linear infinite reverse;
+  }
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  } 
